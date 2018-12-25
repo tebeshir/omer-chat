@@ -1,0 +1,82 @@
+{
+  "name": "omer-chat",
+  "version": "0.0.1",
+  "description": "Ogrenci Merkezi Chat App",
+  "author": "Yetkin Timocin <ytimocin@gmail.com>",
+  "private": true,
+  "scripts": {
+    "build": "vue-cli-service build",
+    "test": "vue-cli-service test:unit --verbose",
+    "lint": "vue-cli-service lint",
+    "watch": "vue-cli-service serve --open"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.1",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "es6-promise": "^4.2.2",
+    "jwt-decode": "^2.2.0",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "socket.io-client": "^2.2.0",
+    "vue": "^2.5.16",
+    "vue-chat-scroll": "^1.3.5",
+    "vue-progressbar": "^0.7.2",
+    "vue-router": "^3.0.1",
+    "vue-toasted": "^1.1.24",
+    "vuelidate": "^0.6.2",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-beta.15",
+    "@vue/cli-plugin-eslint": "^3.0.0-beta.15",
+    "@vue/cli-plugin-unit-jest": "^3.0.0-beta.15",
+    "@vue/cli-service": "^3.0.0-beta.15",
+    "@vue/test-utils": "^1.0.0-beta.15",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^22.0.4",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "vue-template-compiler": "^2.5.16",
+    "webpack-bundle-analyzer": "^2.11.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "indent": [
+        2,
+        4
+      ],
+      "no-unused-vars": [
+        "error",
+        {
+          "args": "none"
+        }
+      ],
+      "semi": [
+        2,
+        "never"
+      ],
+      "no-console": "off"
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

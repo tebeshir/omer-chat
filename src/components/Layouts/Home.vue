@@ -1,0 +1,76 @@
+<template>
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+
+
+                    <center>
+                        <h1>Rondo App</h1>
+
+                        <!--<p>Here will be a check to see if you are currently logged in and your user info.</p>-->
+
+                        <!--<p v-if="user"><i class="fa fa-user fa-fw"></i>  You: {{user}}</p>-->
+                        <!--<p v-else>Hmm, you are not logged in.</p>-->
+
+                        <p>Shared Campus!</p>
+
+                        <!--<p>coming soon...</p>-->
+
+                        <!--<p><i class="fa fa-info-circle fa-fw"></i> This is a simple SPA built using Koa (2.5.1) as the backend and Vue (2.5.16) as the frontend. If you don't want to create an account you can just use <strong>demousername</strong> and <strong>demopassword</strong> to login to the app.</p>-->
+
+                        <!--<p>This site has a sister! Visit it here - <a href="https://koa-react-notes-web.innermonkdesign.com">https://koa-react-notes-web.innermonkdesign.com</a>. It's the exact same app - but written in React!</p>-->
+
+                        <!--<img src="../../assets/images/logo_dark.png" height="50" width="50">-->
+                    </center>
+
+                    <!--<hr>-->
+
+                    <!--<p>-->
+                        <!--<a href="https://github.com/johndatserakis/koa-vue-notes-web" target="_blank"><img src="https://img.shields.io/badge/frontend&#45;&#45;social.svg?style=social" alt=""></a>-->
+
+                        <!--<a href="https://twitter.com/intent/tweet?text=Check+out+this+project+on+GitHub:+https://github.com/johndatserakis/koa-vue-notes-web&url=%5Bobject%20Object%5D" target="_blank"><img src="https://img.shields.io/twitter/url/https/github.com/johndatserakis/koa-vue-notes-web.svg?style=social" alt=""></a>-->
+
+                        <!--<a href="https://raw.githubusercontent.com/johndatserakis/koa-vue-notes-web/master/LICENSE" target="_blank"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt=""></a>-->
+
+                        <!--<a href="https://github.com/johndatserakis/koa-vue-notes-web/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/johndatserakis/koa-vue-notes-web.svg" alt=""></a>-->
+
+                        <!--<a href="https://github.com/johndatserakis/koa-vue-notes-web/network" target="_blank"><img src="https://img.shields.io/github/forks/johndatserakis/koa-vue-notes-web.svg" alt=""></a>-->
+                    <!--</p>-->
+
+                    <!--<p>-->
+                        <!--<a href="https://github.com/johndatserakis/koa-vue-notes-api" target="_blank"><img src="https://img.shields.io/badge/Backend&#45;&#45;social.svg?style=social" alt=""></a>-->
+
+                        <!--<a href="https://twitter.com/intent/tweet?text=Check+out+this+project+on+GitHub:+https://github.com/johndatserakis/koa-vue-notes-api&url=%5Bobject%20Object%5D" target="_blank"><img src="https://img.shields.io/twitter/url/https/github.com/johndatserakis/koa-vue-notes-api.svg?style=social" alt=""></a>-->
+
+                        <!--<a href="https://raw.githubusercontent.com/johndatserakis/koa-vue-notes-api/master/LICENSE" target="_blank"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt=""></a>-->
+
+                        <!--<a href="https://github.com/johndatserakis/koa-vue-notes-api/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/johndatserakis/koa-vue-notes-api.svg" alt=""></a>-->
+
+                        <!--<a href="https://github.com/johndatserakis/koa-vue-notes-api/network" target="_blank"><img src="https://img.shields.io/github/forks/johndatserakis/koa-vue-notes-api.svg" alt=""></a>-->
+                    <!--</p>-->
+                </div>
+
+            </div>
+        </div>
+    </section>
+</template>
+
+<script>
+import { mapState } from 'vuex'
+
+export default {
+    name: 'home',
+    computed: {
+        ...mapState({
+            user: state => state.user.user
+        })
+    },
+    mounted () {
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+</style>
