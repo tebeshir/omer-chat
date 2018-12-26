@@ -38,7 +38,7 @@ export default {
             evt.preventDefault()
             this.chat.room = this.$route.params.id
             this.chat.message = this.chat.nickname + ' join the room'
-            axios.post(`http://50.112.16.204:3000/api/chat`, this.chat)
+            axios.post(`https://50.112.16.204:3001/api/chat`, this.chat)
                 .then(response => {
                     this.socket.emit('save-message', {
                         room: this.chat.room,

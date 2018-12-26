@@ -34,7 +34,7 @@ export default {
     methods: {
         onSubmit (evt) {
             evt.preventDefault()
-            axios.post(`http://50.112.16.204:3000/api/room`, this.room)
+            axios.post(`https://50.112.16.204:3001/api/room`, this.room)
                 .then(response => {
                     this.$router.push({
                         name: 'RoomList'

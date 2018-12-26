@@ -73,7 +73,7 @@ export default {
     },
     created () {
         console.log(`this.$route.params.id => ${this.$route.params.id}`)
-        axios.get(`http://50.112.16.204:3000/api/chat/` + this.$route.params.id)
+        axios.get(`https://50.112.16.204:3001/api/chat/` + this.$route.params.id)
             .then(response => {
                 console.log(`response => ${JSON.stringify(response)}`)
                 console.log(`response.data => ${JSON.stringify(response.data)}`)
@@ -106,7 +106,7 @@ export default {
             evt.preventDefault()
             this.chat.room = this.$route.params.id
             this.chat.nickname = this.$route.params.nickname
-            axios.post(`http://50.112.16.204:3000/api/chat`, this.chat)
+            axios.post(`https://50.112.16.204:3001/api/chat`, this.chat)
                 .then(response => {
                     this.socket.emit('save-message', response.data)
                     this.chat.message = ''

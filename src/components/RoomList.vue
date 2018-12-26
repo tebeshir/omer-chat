@@ -36,7 +36,7 @@ export default {
         }
     },
     created () {
-        axios.get(`http://50.112.16.204:3000/api/room`)
+        axios.get(`https://50.112.16.204:3001/api/room`)
             .then(response => {
                 this.rooms = response.data
             })
