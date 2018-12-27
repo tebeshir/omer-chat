@@ -68,7 +68,7 @@ export default {
             errors: [],
             nickname: this.$route.params.nickname,
             chat: {},
-            socket: io('http://50.112.16.204:4000')
+            socket: io('https://omer-chat-api.herokuapp.com:4000')
         }
     },
     created () {
